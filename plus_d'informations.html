@@ -1,0 +1,49 @@
+<!--page plus d'informations:affichage date et heure par JS-->
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<title>TP 1</title>
+<!-- insérer le Favicon -->
+<link rel="shortcut icon" href="icone ensibs.jpg" type="image/x-icon">  
+<!--ajouter un formulaire à une image --> 
+<link rel="stylesheet" href="stylepage1.css">
+</head>
+<body> 
+  <a href="page1.html"><img src="Logo.JPG" width="250" height="180" alt="Logo"></a>
+  <div class="container_informations">
+    
+<!--ajouter un cadre en ligne.-->
+<!-- iframe : afficher une page Web dans une page Web-->
+<h2>Plus d'informations</h2> 
+<iframe src="https://www-ensibs.univ-ubs.fr/fr/index.html" 
+  height="300px" width="100%" id="Iframe_ENSIBS"></iframe>
+  <h3>Découvrir plus d'informations sut notre site:  <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations-d-ingenieurs/
+    genie-industriel-4-0.html" target="iframe_GI" id="Iframe_ENSIBS_a">ensibs.fr</a></h3>
+<!--modifier le contenu et le style par JS-->
+<h2>Nous contacter</h1>
+<h3 id="MyfooterJS2">Retrouver nous sur notre site de Lorient.</h3>
+  <script>
+  function myFunction() {
+    document.getElementById("MyfooterJS2").style.fontSize = "35px"; 
+    document.getElementById("MyfooterJS2").style.color = "black";
+    document.getElementById("MyfooterJS2").style.backgroundColor = "#2980b9";  
+    document.getElementById("MyfooterJS2").innerHTML =
+    "Adresse: 17 Bd Flandres Dunkerque 1940, 56100 Lorient";
+  }
+  </script>
+    <button type="button" onclick="myFunction()" id="button-myfooter">Retrouvez nous!</button>
+
+  <!--affichage date et heure par JS-->
+  <h2>Dernière consultation</h2>
+<button type="button" id="button-myfooter-informations"
+onclick="document.getElementById('consultation').innerHTML = 
+new Date().toLocaleString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', 
+day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' })">
+  Cliquer ici.
+</button>
+<p id="consultation"></p>
+</div>
+
+</body> 
+</html>

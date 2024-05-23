@@ -1,0 +1,318 @@
+
+body, html { /* Styles de base pour html et body pour s'assurer que l'interface utilisateur utilise toute la hauteur disponible et utilise une police lisible */
+  height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+
+  }
+  *{
+   box-sizing: border-box;
+  }
+  /* Configuration du background pour .bg-img */
+  .bg-img {
+    /* The image used */
+    background-image: url("menu.jpg"); /*Image de fond centrée */
+    min-height: 380px; /* Hauteur minimale pour l'image de fond */
+    /* Center and scale the image nicely */
+    background-position: center;
+   background-size: cover;/* L'image de fond couvre tout l'espace disponible */
+  }
+  
+  /* Styles pour le conteneur du formulaire */
+  .container {
+   position: absolute;/* Position absolue par rapport à son parent relatif .bg-img */
+    right: 20px;/* Droite fixée à 20px du bord droit */
+    margin: 20px;/* Marge autour du conteneur */
+    max-width: 300px;/* Largeur maximale du conteneur */
+    padding: 16px;/* Espacement interne autour du contenu du conteneur */
+    background-color: white;
+  }
+  /* Styles pour les inputs */
+  input[type=text], input[type=password] {
+    width: 100%;/* Prend toute la largeur du conteneur */
+    padding: 15px;
+    margin-bottom: 22px; /* Marge en bas pour séparer les entrées */    border: none;
+    background: whitesmoke;
+  }
+  /* style du bouton de soumission  */
+  .btn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;/* Padding autour du texte du bouton */
+    border: none;
+    cursor: pointer;
+   width: 100%;/* Largeur complète du conteneur */
+  }
+  p,h3{
+    color: dimgray;
+    font-size:18px;
+  }
+  .button-style {
+    background-color: green; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+    color: white; /* Couleur du texte */
+    padding: 15px 32px; /* Espacement interne */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Type d'affichage */
+    font-size: 18px; /* Taille de police */
+    margin: 4px 2px; /* Marges externes */
+    cursor: pointer; /* Forme du curseur */
+    font-weight: bold; /* Applique le style gras */       
+  }
+  a{
+    color: green;
+    font-size:18px;  
+  }
+  span{
+    color:dimgray;
+  }   
+  .section1{
+    background-color:whitesmoke;
+    color:dimgray;
+    width:200px;
+    height:auto;
+    font-size:18px;
+    padding:20px;
+    /*margin:10px;*/
+    float: right;
+    margin-left: 20px;
+    display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+  } 
+  .section2{
+    background-color:whitesmoke;
+    color:green;
+    width: 200px; 
+    padding:20px;    
+    height: auto; 
+    font-size:18px;  
+    /*margin: 10px;*/
+    float: right;
+    margin-left: 20px;
+  }
+
+  .main {
+    display: flex;
+            flex: 1;
+            width: 70%; /* Ajoute des marges de 10% de chaque côté */
+            margin: 20px auto;
+
+
+        }
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+        .sectionsleft {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+        }
+        .sectionleft {
+          background-color: #f0f0f0;
+          width: 230px;
+          padding: 10px;
+          margin: 10px ;
+        }
+       
+        .containerleftright {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5px auto; /* Centre le contenu horizontalement */
+        }
+        .left, .right {
+            width: 60%;
+            padding: 5px;
+        }
+        .button-container {
+            margin: 20px 0;
+            width: 70%;
+            margin: 5px auto; /* Centre le contenu horizontalement */
+        }
+        .containerceremony {
+          width: 70%;
+          margin: auto; /* Centre le contenu horizontalement */
+      }
+      .button-ceremony {
+        background-color: green; /* Couleur de fond du bouton */
+        color: white; /* Couleur du texte */
+        border: 5px solid black; /* Bordure dorée */
+        padding: 15px 40px; /* Espacement intérieur */
+        text-align: center; /* Alignement du texte */
+        font-size: 18px; /* Taille de la police */
+        font-weight: bold; /* Poids de la police */
+        margin: 10px 60px; /* Marges */
+        border-radius: 10px; /* 10:Coins arrondis */
+        box-shadow: 0 10px 15px green; /* 0:effet, Ombre */
+        font-family: 'Times New Roman'; /* Typographie  */
+    }
+    .containerMedia {
+      width: 80%;
+      margin: auto; /* Centre le contenu  */
+  }
+  .video-container {
+    display: flex;
+    justify-content: space-around; /* Espacement égal entre les vidéos */
+    align-items: center;
+    margin-top: 20px;
+}
+.video {
+    flex: 1;
+    margin: 10px;
+}
+iframe { /*Balise pour intégrer la vidéo YouTube, avec des attributs :*/
+    width: 100%;
+    height: 350px;
+}
+fieldset {
+  border: 1px solid black;
+  width: 50%; /* Ajuster la largeur selon vos besoins */
+  margin: auto; /* Centrer le fieldset */
+}
+legend {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+}
+.search-button {
+       background-color: green; /* Couleur de fond du bouton */
+        color: white; /* Couleur du texte */
+        border: 5px solid black; /* Bordure  */
+        padding: 15px 40px; /* Espacement intérieur */
+        text-align: center; /* Alignement du texte */
+        font-size: 18px; /* Taille de la police */
+        font-weight: bold; /* Poids de la police */
+        margin: 10px 35%; /* Marges */
+        font-family: 'Times New Roman'; /* Typographie  */
+}
+.search-container1 {
+  text-align: center;
+}
+.search-container2 {
+  text-align: center;
+  width: 50% ;
+  margin: auto;
+}
+.search-container {
+  border: 1px solid black;
+  width: 50%; /* Ajuster la largeur selon vos besoins */
+  margin: auto; /* Centrer le fieldset */
+}
+.search-button-word {
+  background-color: green; /* Couleur de fond du bouton */
+   color: white; /* Couleur du texte */
+   border: 5px solid black; /* Bordure  */
+   padding: 15px 40px; /* Espacement intérieur */
+   text-align: center; /* Alignement du texte */
+   font-size: 18px; /* Taille de la police */
+   font-weight: bold; /* Poids de la police */
+   margin: 10px 45px; /* Marges */
+   font-family: 'Times New Roman'; /* Typographie  */
+}
+.main_recherche {
+  width: 80%;
+  margin: auto; /* Centre le contenu  */
+ }
+.container_informations {
+  width: 80%;
+  margin: 2px auto; /* Centre le contenu  */
+  padding: 30px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;/*bordures adjacentes des cellules*/
+}
+th {
+  text-align: left;
+}
+/*table2*/
+caption {
+  caption-side: top;/*égende au-dessus du tableau.*/
+  font-size: 18px;
+  margin-bottom: 10px;/*espace entre la légende et le tableau */
+  font-weight: bold;
+  text-align: center; /* Centrer la légende */
+  color: green; /* Couleur rouge */
+}
+
+/* Styles spécifiques pour le troisieme tableau */
+.third-table {
+  border: 1px solid ;
+  border-collapse: collapse;
+}
+.third-table tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+.third-table th:nth-child(even), .third-table td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+/* élément avec id "myfooter" */
+#myfooter {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+/* pied de page avec bouton */
+#myfooterJS {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;/* Transformer le texte en majuscules */
+  letter-spacing: 2px;
+}
+#myfooterJS:hover { /* Styles lorsque l'élément "myfooter" est survolé */
+  color: green;
+}
+#button-myfooter {
+  display: block;/*/* Afficher en tant que bloc pour occuper toute la largeur */
+  margin: 20px auto;
+  border: black;
+  cursor: pointer;
+  background-color: lightblue; /* Couleur de fond du bouton */
+  color: black; /* Couleur du texte */
+  border: 5px solid black; /* Bordure  */
+  padding: 15px 40px; /* Espacement intérieur */
+  text-align: center; /* Alignement du texte */
+  font-size: 22px; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  font-family: 'Times New Roman'; /* Typographie  */
+}
+#button-myfooter:hover {
+  background-color: green;
+}
+/* Style pour l'iframe */
+#Iframe_ENSIBS {
+  border: 2px solid #2c3e50;       
+  border-radius: 5px;              /* Coins arrondis */
+}
+#Iframe_ENSIBS_a {
+  color: #2980b9;                  /* Couleur du texte des liens */
+  text-decoration: none;           /* Supprime la décoration par défaut (soulignement) */
+  font-weight: bold;               /* Texte en gras */
+}
+#Iframe_ENSIBS_a:hover {
+  text-decoration: underline;      /*  soulignée au survol */
+}
+
+#button-myfooter-informations {
+  background-color: lightblue; /* Couleur de fond du bouton */
+  color: black; /* Couleur du texte */
+  border: 5px solid black; /* Bordure dorée */
+  padding: 15px 40px; /* Espacement intérieur */
+  text-align: center; /* Alignement du texte */
+  font-size: 18px; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  margin: 10px ; /* Marges */
+  border-radius: 10px; /* 10:Coins arrondis */
+  font-family: 'Times New Roman'; /* Typographie  */
+}
+#button-myfooter-informations:hover {
+  background-color: green;
+}
